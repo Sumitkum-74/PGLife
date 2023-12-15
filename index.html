@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title >Welcome | PG Life</title>
+            <link rel="icon" type="image/x-icon" href="logo.ico" style="background-color: white">
+           
+        <meta name="viewport" content="width=device-width, intial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+        <link href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet" />
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/common.css" rel="stylesheet">
+        <link href="st.css" rel="stylesheet">
+       <link rel="stylesheet" href="css/sign_up.css" type="text/css">
+    </head>
+<body>
+    
+<div class="header sticky-top" >
+     <nav class="navbar navbar-expand-md navbar-light">
+       
+        <a  class="navbar_brand" href="index.html">
+            <img   src="img/logo.png" alt="logo" height="50px" width="100px">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#my-navbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="my-navbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="colorlib-regform-8/form.php" data-toggle="modal" data-target="#signup-modal">
+                        <i class="fas fa-user"></i>Signup
+                </a>
+                </li>
+                <div class="nav-vl"></div>
+                <li class="nav-item">
+                    <a class="nav-link" href="colorlib-regform-8/sign_in.html" data-toggle="modal" data-target="#login-modal">
+                        <i class="fas fa-sign-in-alt"></i>Login
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<div id="loading">
+</div>
+
+<div class="banner-container">
+    <h2 class="white pb-3">Happiness per Square Foot</h2>
+
+    <center><form id="search-form">
+        <div class="input-group city-search">
+            <input type="text" class="form-control input-city" id='city' name='city' placeholder="Enter your city to search for PGs" />
+            <div id="search" class="input-group-append">
+                
+                <button type="submit" class="btn btn-secondary">
+                    <i class="fa fa-search"></i>
+                </button>
+                </div>
+            </div>
+        </div>
+    </form></center>
+</div>
+
+<!--login form-------------->
+<div id="container" class="modal-body" >
+    <div class="hd">
+        <h1>Sign-up</h1>
+    </div>
+    <div class="main">
+    <form action="register_form.php" method="post" id="signup-form" class="form" role="form">
+        <div class="input-group form-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">
+                    <i class="fas fa-user"></i>
+                </span>
+            </div>
+            <input type="text" class="form-control" name="full_name" placeholder="Full Name" maxlength="30" required>
+        </div>
+
+        <div class="input-group form-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">
+                    <i class="fas fa-phone-alt"></i>
+                </span>
+            </div>
+            <input type="text" class="form-control" name="phone" placeholder="Phone Number" maxlength="10" minlength="10" required>
+        </div>
+
+        <div class="input-group form-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">
+                    <i class="fas fa-envelope"></i>
+                </span>
+            </div>
+            <input type="email" class="form-control" name="email" placeholder="Email" required>
+        </div>
+
+        <div class="input-group form-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">
+                    <i class="fas fa-lock"></i>
+                </span>
+            </div>
+            <input type="password" class="form-control" name="password" placeholder="Password" minlength="6" required>
+        </div>
+
+        <div class="input-group form-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">
+                    <i class="fas fa-university"></i>
+                </span>
+            </div>
+            <input type="text" class="form-control" name="college_name" placeholder="College Name" maxlength="150" required>
+        </div>
+
+        <div id="gender" class="form-group">
+            <span class="abc">I'm a</span>
+            <input  type="radio" class="ml-3" id="gender-male" name="gender" value="male" height="-50px" /> Male
+            <label for="gender-male">
+            </label>
+            <input type="radio" class="ml-3" id="gender-female" name="gender" value="female" />
+            <label for="gender-female">
+                Female
+            </label>
+        </div>
+
+        <div class="form-group">
+            <button id="hov1" type="submit" class="btn btn-block btn-primary">Create Account</button>
+        </div>
+    </form>
+</div>
+</div>
+
+
+<!--------------------end------------------------------------------------------------------------>
+
+
+<div class="page-container">
+    <h1 class="city-heading">
+        Major Cities
+    </h1></div>
+     
+    <div >
+        <div class="row" id="cities">
+            <div class="city-card-container col-md">
+                <a  href="property_list.html">
+                    <div class="city-card rounded-circle">
+                        <img id="hov" src="img/delhi.png" class="avatar" />
+                    </div>
+                </a>
+            </div>
+             </a>
+        
+        <div class="city-card-container col-md">
+            <a href="property_list.html">
+                <div class="city-card rounded-circle">
+                    <img id="hov" src="img/mumbai.png" class="avatar" />
+                </div>
+             </a>
+            </div>
+        <div class="city-card-container col-md">
+            <a href="property_list.html">
+                <div class="city-card rounded-circle">
+                    <img id="hov" src="img/bangalore.png" class="avatar"  />
+                </div>
+             </a>
+        </div>
+        <div class="city-card-container col-md">
+            <a href="property_list.html">
+                <div class="city-card rounded-circle">
+                    <img  id="hov"src="img/hyderabad.png" class="avatar" />
+                </div>
+             </a>
+        </div>
+        
+    </div>            
+            <div class="row" id="foot">
+                <div class="footer">
+                    <div class="page-container footer-container">
+                        <div class="footer-cities">
+                            <div class="footer-city">
+                                <a href="property_list.html">PG in Delhi</a>
+                            </div>
+                            <div class="footer-city">
+                                <a href="property_list.html">PG in Mumbai</a>
+                            </div>
+                            <div class="footer-city">
+                                <a href="property_list.html">PG in Bangalore</a>
+                            </div>
+                            <div class="footer-city">
+                                <a href="property_list.html">PG in Hyderabad</a>
+                            </div>
+                        </div>
+                        <div class="footer-copyright">© 2022 Copyright PG Life </div>
+                    </div>
+                </div>
+             </div>
+            </div>
+
+
+
+            <script>
+                var modal = document.getElementById('signup-form');
+                window.onclick = function(event) {
+                    if (event.target == modal) {
+                        modal.style.display = "none";
+                    }
+                }
+            </script>
+        
+       
+</body>
+</html>
